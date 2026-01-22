@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_health_profile"
+        android:title="Health Profile"
+        />
+    <item
+        android:id="@+id/nav_medical_history"
+        android:title="Medical History"
+        />
+    <item
+        android:id="@+id/nav_vaccination"
+        android:title="Vaccination Records"
+         />
+    <item
+        android:id="@+id/nav_certificates"
+        android:title="Certificates"
+        />
+    <item
+        android:id="@+id/nav_notifications"
+        android:title="Notifications" />
+
+    <item
+        android:id="@+id/nav_appointment"
+        android:title="Appointment" />
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"
+       />
+</menu>

@@ -1,0 +1,9 @@
+<resources>
+    <string-array name="history_types">
+        <item>Diagnosis</item>
+        <item>Treatment</item>
+        <item>Follow-up</item>
+        <item>Medication</item>
+        <item>General Notes</item>
+    </string-array>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <!-- Request Certificate Button -->
+    <Button
+        android:id="@+id/btnRequestCertificate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request Certificate"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_dark_holo_red"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- RecyclerView fills remaining space -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerStudentCertificates"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:clipToPadding="false"
+        android:padding="8dp"
+        android:background="@drawable/edittext_white"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</LinearLayout>

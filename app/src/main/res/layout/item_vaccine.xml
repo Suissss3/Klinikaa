@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/edittext_white"
+    android:elevation="4dp">
+
+    <!-- Vaccine Name -->
+    <TextView
+        android:id="@+id/txtVaccineName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vaccine Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        android:layout_marginBottom="6dp"/>
+
+    <!-- Date Taken -->
+    <TextView
+        android:id="@+id/txtDateTaken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date Taken"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Due Date -->
+    <TextView
+        android:id="@+id/txtDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Due Date"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"/>
+</LinearLayout>

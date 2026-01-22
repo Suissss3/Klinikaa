@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/edittext_white"
+    android:elevation="2dp">
+
+    <!-- Date -->
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date: Sept 12, 2025"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Type of Visit -->
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type of Visit: Check-up"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="2dp"/>
+
+    <!-- Diagnosis -->
+    <TextView
+        android:id="@+id/tvDiagnosis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Diagnosis: Flu"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="2dp"/>
+
+    <!-- Treatment -->
+    <TextView
+        android:id="@+id/tvTreatment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Treatment: Paracetamol"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="2dp"/>
+</LinearLayout>

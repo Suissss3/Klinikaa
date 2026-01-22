@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvAdminVaccineTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vaccination Records"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Button to add vaccination -->
+    <Button
+        android:id="@+id/btnAddVaccine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Vaccination"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_dark_holo_red"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- RecyclerView for vaccine records -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerVaccines"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:clipToPadding="false"
+        android:padding="8dp"
+        android:background="@drawable/edittext_white"/>
+</LinearLayout>

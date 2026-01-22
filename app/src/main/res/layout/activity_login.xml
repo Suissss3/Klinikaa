@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:contentDescription="App Logo"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:paddingBottom="24dp"/>
+
+    <!-- Student ID -->
+    <EditText
+        android:id="@+id/edtStudentId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Student ID"
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@drawable/edittext_white"
+        android:textColor="#FF0000"
+        android:textColorHint="@android:color/darker_gray"/>
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@drawable/edittext_white"
+        android:textColor="#FF0000"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FF0000"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Register Redirect Button -->
+    <Button
+        android:id="@+id/btnRegisterRedirect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Not yet registered? Register here"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

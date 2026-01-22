@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvAdminCertificatesHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin - Certificates"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/button_dark_holo_red"/>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCertificatesAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        android:background="@drawable/edittext_white"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    <!-- Add Certificate Button -->
+    <Button
+        android:id="@+id/btnAddCertificate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Certificate"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FF0000"/>
+</LinearLayout>

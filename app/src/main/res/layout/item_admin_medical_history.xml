@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/edittext_white"
+        android:elevation="2dp">
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date: Sept 12, 2025"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- Type -->
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Type: Check-up"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- Diagnosis -->
+        <TextView
+            android:id="@+id/tvDiagnosis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diagnosis: Flu"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- Treatment -->
+        <TextView
+            android:id="@+id/tvTreatment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Treatment: Paracetamol"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnEditHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_edit"
+                android:contentDescription="Edit"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="#FF0000"
+                android:layout_marginEnd="12dp"/>
+
+            <ImageButton
+                android:id="@+id/btnDeleteHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_delete"
+                android:contentDescription="Delete"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@android:color/holo_red_dark"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

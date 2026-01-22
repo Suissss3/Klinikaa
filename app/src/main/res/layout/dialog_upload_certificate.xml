@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg">
+
+    <!-- Certificate Title -->
+    <EditText
+        android:id="@+id/edtCertificateTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Certificate Title"
+        android:background="@drawable/edittext_white"
+        android:textColor="#FF0000"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Save/Request Button -->
+    <Button
+        android:id="@+id/btnSaveCertificate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Certificate"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_dark_holo_red"/>
+</LinearLayout>

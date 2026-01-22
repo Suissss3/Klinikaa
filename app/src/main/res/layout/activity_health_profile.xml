@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/profile_placeholder"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/circle_background"
+            android:padding="2dp" />
+
+        <!-- Student Info -->
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvStudentId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student ID"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvYearLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year Level"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvLastVisit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Clinic Visit"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Health Info -->
+        <EditText
+            android:id="@+id/edtHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Height (cm)"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edittext_white"
+            android:textColor="#FF0000"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/edtWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Weight (kg)"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edittext_white"
+            android:textColor="#FF0000"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerBloodType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_white"
+            android:popupBackground="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <!-- BMI Display -->
+        <TextView
+            android:id="@+id/tvBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI: N/A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvBMICategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category: N/A"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Profile"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_dark_holo_red"/>
+    </LinearLayout>
+</ScrollView>

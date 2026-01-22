@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg">
+
+
+
+    <!-- Update Last Clinic Visit -->
+    <Button
+        android:id="@+id/btnUpdateLastVisit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Last Clinic Visit"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FF0000"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- View Profile -->
+    <Button
+        android:id="@+id/btnViewProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Profile"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FF0000"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- View Medical History -->
+    <Button
+        android:id="@+id/btnViewMedicalHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Medical History"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FF0000"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Vaccination Records -->
+    <Button
+        android:id="@+id/btnVaccinationRecords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vaccination Records"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FF0000"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Delete User (special styling) -->
+    <Button
+        android:id="@+id/btnDeleteUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete User"
+        android:textColor="@android:color/holo_red_dark"
+        android:background="@drawable/edittext_white"
+        android:layout_marginTop="12dp"/>
+</LinearLayout>

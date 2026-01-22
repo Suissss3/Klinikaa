@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_admin_medical_history"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AdminMedicalHistoryActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvMedicalHistoryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medical History"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Add History Button -->
+    <Button
+        android:id="@+id/btnAddHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Medical History"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FF0000"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- RecyclerView for history items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        android:background="@drawable/edittext_white"/>
+</LinearLayout>

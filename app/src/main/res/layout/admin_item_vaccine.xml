@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edittext_white"
+    android:layout_marginBottom="8dp"
+    android:elevation="2dp">
+
+    <!-- Student Name -->
+    <TextView
+        android:id="@+id/tvStudentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Name"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#FF0000"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Vaccine Name -->
+    <TextView
+        android:id="@+id/tvVaccineName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vaccine"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="2dp"/>
+
+    <!-- Date Taken -->
+    <TextView
+        android:id="@+id/tvDateTaken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date Taken"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="2dp"/>
+
+    <!-- Next Due -->
+    <TextView
+        android:id="@+id/tvDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next Due"
+        android:textColor="@android:color/black"/>
+</LinearLayout>

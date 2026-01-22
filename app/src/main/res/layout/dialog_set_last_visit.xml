@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg">
+
+    <!-- Last Clinic Visit Date -->
+    <EditText
+        android:id="@+id/edtLastVisitDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Last Clinic Visit Date"
+        android:focusable="false"
+        android:clickable="true"
+        android:inputType="none"
+        android:background="@drawable/edittext_white"
+        android:textColor="#FF0000"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Save/Update Button -->
+    <Button
+        android:id="@+id/btnUpdateLastVisit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Last Clinic Visit"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_dark_holo_red"/>
+</LinearLayout>

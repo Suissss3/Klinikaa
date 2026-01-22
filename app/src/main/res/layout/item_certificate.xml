@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/edittext_white"
+    android:elevation="2dp">
+
+    <!-- Certificate Info -->
+    <TextView
+        android:id="@+id/tvCertStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        android:paddingBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/tvCertType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:textColor="@android:color/black"
+        android:paddingBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/tvCertStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:paddingBottom="8dp"/>
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnUploadCert"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Upload"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_dark_holo_red"/>
+
+        <Button
+            android:id="@+id/btnApproveCert"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Approve"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_dark_holo_red"
+            android:layout_marginStart="8dp"/>
+
+        <Button
+            android:id="@+id/btnRejectCert"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reject"
+            android:textColor="@android:color/holo_red_dark"
+            android:background="@drawable/edittext_white"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</LinearLayout>

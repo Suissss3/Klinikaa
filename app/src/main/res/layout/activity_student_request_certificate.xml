@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <!-- Label for Spinner -->
+    <TextView
+        android:id="@+id/tvCertTypeLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Certificate Type"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:paddingBottom="8dp"/>
+
+    <!-- Dropdown for certificate types -->
+    <Spinner
+        android:id="@+id/spinnerCertTypeStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:background="@drawable/edittext_white"
+        android:popupBackground="#FFFFFF"
+        android:padding="8dp"/>
+
+    <!-- Request button -->
+    <Button
+        android:id="@+id/btnRequestCert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request Certificate"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_dark_holo_red"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

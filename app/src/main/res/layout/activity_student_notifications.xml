@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvNotificationsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notifications"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Notifications list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerNotifications"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:clipToPadding="false"
+        android:padding="8dp"
+        android:background="@drawable/edittext_white"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    <!-- Optional Clear Notifications Button -->
+    <Button
+        android:id="@+id/btnClearNotifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear Notifications"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_dark_holo_red"
+        android:layout_marginTop="12dp"/>
+</LinearLayout>
